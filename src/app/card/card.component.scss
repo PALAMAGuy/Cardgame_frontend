@@ -1,0 +1,142 @@
+.card {
+    background-color: rgb(234,215,168);
+    border: 2px solid #000000;
+    height: 600px;
+    width: 324px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin :20px;
+    
+  }
+  
+  .card-img {
+    height: 75%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card-img img {
+    height: auto;
+    width: 100%;
+  }
+  
+  .card-name {
+    height: 7%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+
+  h5{
+    font-size: 20px;
+  }
+  
+  .card-description {
+    height: 17%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    
+  }
+
+  p{
+    font-size: 12px;  
+  }
+  
+  .top-left-circle {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border : 2px solid white
+  }
+
+  .top-left-circle p,.top-right-circle p, .top-middle-circle p{
+    margin-top: 12px;
+    font-size: 30px;
+  }
+
+  .top-right-circle {
+    position: absolute;
+    top: 5px;
+    left: 255px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(242,183,24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border : 2px solid black
+
+  }
+
+  .top-middle-circle {
+    position: absolute;
+    top: 70px;
+    left: 255px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    border : 2px solid black
+
+  }
+
+  .hole {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .card-returned {
+    background-color: black;
+    height: 600px;
+    width: 324px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin :20px;
+
+  }
+  
+  .logo {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

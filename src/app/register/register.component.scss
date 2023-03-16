@@ -1,0 +1,66 @@
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /*
+    background: url('https://cdn.discordapp.com/attachments/1084780363932512256/1085154136070291486/C_O_M_F_Y_a_full_body_dark-souls_like_warrior_resting_next_to_a_71eea847-b95b-45b4-920f-14dfd1a3b8cc.png') no-repeat  fixed;
+    background-size: cover;
+    */
+    background-color: white;
+    font-family: 'Palatino Linotype', serif;
+    color: #f8f8f8;
+  }
+  
+  .login-box {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .login-box img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .login-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-box input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .login-box button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border-radius: 12px;
+    border: none;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    border:2px solid black;
+  }
+  
+  .login-box button:hover {
+    /*
+    background-color: #946a2d;
+    */
+    border:2px solid white;
+  }
+  
+  hr {
+    border: none;
+    height: 2px;
+    /* Set the hr color */
+    color: white;  /* old IE */
+    background-color: white;  /* Modern Browsers */
+  }

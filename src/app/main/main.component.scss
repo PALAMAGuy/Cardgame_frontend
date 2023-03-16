@@ -1,0 +1,64 @@
+.menu-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('https://cdn.discordapp.com/attachments/1084780363932512256/1085453250301534288/C_O_M_F_Y_a_full_body_gold_armored_warrior_with_white_beard_nex_04e8834b-1da0-4a16-9a51-2deb3f0f765b.png') no-repeat  fixed;
+    background-size: cover;
+    font-family: 'Palatino Linotype', serif;
+    color: #f8f8f8;
+  }
+  
+  .boutons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: black;
+    height:100%;
+    margin-right:60%;
+  }
+
+  .boutons img {
+    width: 300px;
+    padding: 32px 32px;
+    transition: all 0.3s ease;
+  }
+
+  .bouton-jouer,
+  .bouton-charger,
+  .bouton-options,
+  .bouton-quitter {
+    background-color: transparent;
+    color: #f8f8f8;
+    border: 2px solid black;
+    padding: 10px 25px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    border-radius: 12px;
+    text-shadow: 1px 1px 1px #000;
+    transition: all 0.3s ease;
+    width:100%
+  }
+  
+  .bouton-jouer:hover,
+  .bouton-charger:hover,
+  .bouton-options:hover,
+  .bouton-quitter:hover {
+    //background-color: #f8f8f8;
+    border: 2px solid #f8f8f8;
+    color: #f8f8f8;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-principal {
+      flex-direction: column;
+    }
+
+    .boutons {
+      align-items: center;
+      margin-left: 0;
+    }
+  }
+  
