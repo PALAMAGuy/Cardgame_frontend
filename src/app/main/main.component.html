@@ -1,9 +1,17 @@
 <div class="menu-principal">
-  <div class="boutons">
+  <div class="boutons" *ngIf="isLoggedIn">
     <img src="/assets/img/logo.png" alt="Logo">
-    <button class="bouton-jouer">Nouvelle partie</button>
-    <button class="bouton-charger">Charger une partie</button>
-    <button class="bouton-options">Options</button>
-    <button class="bouton-quitter">Quitter</button>
+    <div class="usernameText">
+      <p>Connected as : {{ username }}</p>
+    </div>
+    <!--
+    <button class="bouton-jouer">STORY MODE</button>
+    <button class="bouton-jouer">MULTIPLAYER</button>
+    <a href="/faction"><button class="bouton-jouer">DECK</button></a>
+    <button class="bouton-jouer">SHOP</button>
+    -->
+    <a href="/faction"><button class="bouton-jouer">FACTION</button></a>
+    <a href="/card"><button class="bouton-jouer">CARD</button></a>
+    <button (click)="logout()" type="button" class="bouton-quitter">LOGOUT</button>
   </div>
 </div>

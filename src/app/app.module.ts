@@ -15,6 +15,8 @@ import { httpInterceptorProviders } from './_helpers/http.interceptor';
 import { ProfileComponent } from './profile/profile.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { FactionComponent } from './faction/faction.component';
+import { ListCardComponent } from './list-card/list-card.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { BoardAdminComponent } from './board-admin/board-admin.component';
     CardComponent,
     ProfileComponent,
     BoardUserComponent,
-    BoardAdminComponent
+    BoardAdminComponent,
+    FactionComponent,
+    ListCardComponent
   ],
   imports: [
     BrowserModule,

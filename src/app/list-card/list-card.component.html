@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="listImg col-2" *ngFor="let item of cards" (click)="showDetails(item.id)"> 
+                    <img src="{{ item.image }}">
+                </div>
+            </div>
+        </div>
+        <div class="col-6" style="text-align:center;">
+            <div class="card" *ngIf="showCard">
+                <div class="top-left-circle">
+                    <p>{{ card.power }}</p>
+                </div>
+                <div class="card-img">
+                  <img src="{{ card.image }}" alt="card image">
+                </div>
+                <div class="card-name">
+                  <h5>{{ card.name }}</h5>
+                </div>
+                <div class="card-description">
+                  <p>{{ card.description }}</p>
+                </div>
+              </div>   
+        </div>
+    </div>
+</div>

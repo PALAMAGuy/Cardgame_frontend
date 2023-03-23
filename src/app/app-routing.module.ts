@@ -7,6 +7,8 @@ import { MainComponent } from './main/main.component';
 import { ProfileComponent } from './profile/profile.component';
 import { BoardUserComponent } from './board-user/board-user.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { FactionComponent } from './faction/faction.component';
+import { ListCardComponent } from './list-card/list-card.component';
 
 const routes: Routes = [
   { path: 'home', component: MainComponent },
@@ -15,6 +17,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent },
   { path: 'user', component: BoardUserComponent },
   { path: 'admin', component: BoardAdminComponent },
+  { path: 'faction', component: FactionComponent },
+  { path: 'card', component: ListCardComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' }
 ];
 

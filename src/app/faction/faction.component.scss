@@ -1,0 +1,44 @@
+
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left:5vw;
+    width:90vw;
+  }
+
+  .description{
+    color:white;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    white-space: pre-wrap;
+    font-family: "Old English Text MT", sans-serif;
+  }
+  
+  .card {
+    width: calc(25% - 20px);
+    margin-top: 5vh;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius:10px;
+  }
+
+  .card:hover{
+    border: 3px solid red;
+    cursor:pointer
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius:10px;
+  }
+  
+  .card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }

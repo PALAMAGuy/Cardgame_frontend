@@ -1,60 +1,79 @@
-<div class="col-md-12">
-  <div class="card card-container">
-    <form
-      *ngIf="!isLoggedIn"
-      name="form"
-      (ngSubmit)="f.form.valid && onSubmit()"
-      #f="ngForm"
-      novalidate
-    >
-      <div class="form-group">
-        <label for="username">Username</label>
-        <input
-          type="text"
-          class="form-control"
-          name="username"
-          [(ngModel)]="form.username"
-          required
-          #username="ngModel"
-          [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
-        />
-        <div *ngIf="username.errors && f.submitted" class="invalid-feedback">
-          Username is required!
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input
-          type="password"
-          class="form-control"
-          name="password"
-          [(ngModel)]="form.password"
-          required
-          minlength="6"
-          #password="ngModel"
-          [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
-        />
-        <div *ngIf="password.errors && f.submitted" class="invalid-feedback">
-          <div *ngIf="password.errors['required']">Password is required</div>
-          <div *ngIf="password.errors['minlength']">
-            Password must be at least 6 characters
+<section class="vh-100" style="background-color: black;">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="https://cdn.discordapp.com/attachments/1084780363932512256/1085495340469329990/C_O_M_F_Y_an_elf_queen_full_body_with_blonde_long_straight_hair_911cd76e-6b01-4209-a9c3-18a1edb6ed71.png"
+                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+
+                <form 
+                  *ngIf="!isLoggedIn"
+                  name="form"
+                  (ngSubmit)="f.form.valid && onSubmit()"
+                  #f="ngForm"
+                  novalidate
+                >
+
+                  <h4 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;text-align: center;font-weight:bold">Sign into your account</h4>
+
+                  <div class="form-outline mb-4">
+                    <input
+                        type="text"
+                        name="username"
+                        placeholder="Username"
+                        class="form-control form-control-lg" 
+                        [(ngModel)]="form.username"
+                        required
+                        #username="ngModel"
+                        [ngClass]="{ 'is-invalid': f.submitted && username.errors }"
+                      />
+                      <div *ngIf="username.errors && f.submitted" class="invalid-feedback">
+                        Username is required!
+                      </div>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input
+                      type="password"
+                      name="password"
+                      class="form-control form-control-lg" 
+                      placeholder="Password"
+                      [(ngModel)]="form.password"
+                      required
+                      minlength="6"
+                      #password="ngModel"
+                      [ngClass]="{ 'is-invalid': f.submitted && password.errors }"
+                    />
+                    <div *ngIf="password.errors && f.submitted" class="invalid-feedback">
+                      <div *ngIf="password.errors['required']">Password is required</div>
+                      <div *ngIf="password.errors['minlength']">
+                        Password must be at least 6 characters
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pt-1 mb-4">
+                    <button type="submit" class="btn btn-dark btn-lg btn-block" style="width:100%">Login</button>
+                  </div>
+                  <hr>
+                  <div class="pt-1 mb-4">
+                    <a href="/register"><button type="submit" class="btn btn-secondary btn-lg btn-block" type="button" style="width:100%">Register</button></a>
+                  </div>
+
+                  <a href="#!" class="small text-muted"><p style="color: #393f81;text-align: center;">Terms of use</p></a>
+                  <a href="#!" class="small text-muted"><p style="color: #393f81;text-align: center;">Privacy policy</p></a>
+                </form>
+
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="form-group">
-        <button class="btn btn-primary btn-block">
-          Login
-        </button>
-      </div>
-      <div class="form-group">
-        <div *ngIf="f.submitted && isLoginFailed" class="alert alert-danger" role="alert">
-          Login failed: {{ errorMessage }}
-        </div>
-      </div>
-    </form>
-
-    <div class="alert alert-success" *ngIf="isLoggedIn">
-      Logged in as {{ roles }}.
     </div>
   </div>
-</div>
+</section>

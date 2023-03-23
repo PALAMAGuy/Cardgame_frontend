@@ -51,6 +51,16 @@
     cursor: pointer;
   }
   
+  .usernameText{
+    width:100%;
+    text-align: center;
+
+  }
+
+  a{
+    width:100%
+  }
+  
   @media screen and (max-width: 768px) {
     .menu-principal {
       flex-direction: column;
